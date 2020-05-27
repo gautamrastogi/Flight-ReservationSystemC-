@@ -134,5 +134,25 @@ int d_booking::flightSelection() //function definition for selecting flight
   default: //condition
     cout << "Wrong input entered.\nTry again" << endl;
     return flightSelection();
-  }
-};
+  } 
+}
+
+/*void d_booking::flightSeatNumber(int pnr) {
+    cout<<"Enter PNR of flight: ";
+    cin>>fn1;
+    if(fn1 ==  pnr) {
+    cout<<"Enter the row number with colum letter ex(0 A): ";
+    cin>>row>>colum;
+    colum = toupper(colum);
+    cout<<"The Flight seat Number is: "<<row<<colum;
+    }
+}*/
+
+void d_booking:: d() {
+  cout<<"Your Domestic Flight Number is: " << pnr << "Domestic Flight Departure Time: " << tojd<< "Domestic Flight Arrival Time: " << toja;
+}
+
+
+void d_booking::current(){
+  cout<<"Boarded the Domestic FLight "<<pnr<<endl;
+}

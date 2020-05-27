@@ -14,7 +14,7 @@ extern int global;
     void passenger:: p_detail(int x)//function declaration and definition
     {   if(x==1)//if else for domestic and international booking selection
         { journeyDetail();//function call
-          flightSelection();//function call
+          flightSelection();//function cal
         }
           else
           {  journeyDetailInt();//function call1353
@@ -70,7 +70,7 @@ extern int global;
             return pnr;
         }
 
-     int passenger:: getpnri()//function to get pnr for international booking
+     string passenger:: getpnri()//function to get pnr for international booking
      {
          return pnri;
      }
@@ -94,3 +94,16 @@ extern int global;
          cout<<"Departure Time:" << tojdi << endl;
          cout<<"Arrival Time:" << tojai;
      }
+
+  void passenger:: d() {
+        cout<<"Mr. "<< f_name<<l_name<<"You have boarded the Domestic Flight "<< pnr<< "Have a Safe Flight!";
+    }
+
+    void passenger:: i() {
+        cout<<"Mr. "<< f_name<<l_name<<"You have boarded the International Flight "<< pnri << "Have a Safe Flight!";
+    }
+
+
+    void passenger::current(){
+        cout<<"haven't boarded the plane yet\n";
+    }

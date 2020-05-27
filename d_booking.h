@@ -15,7 +15,9 @@ extern int global;
 class d_booking //class  for domestic booking
 {
   protected:
-  int pnr, flag = 0;
+  int pnr, flag = 0,fn1;
+  int row;
+  char colum;
   char f_d[10], toja[7], tojd[7]; //protected members
   long int doj;
   int dayd, monthd, yeard; 
@@ -26,10 +28,15 @@ class d_booking //class  for domestic booking
 
 void flightNum_d();
 
- virtual int journeyDetail(); // function declaration for domestic journey
+ int journeyDetail(); // function declaration for domestic journey
 
- virtual int flightSelection(); //function declaration for selecting flight
+ int flightSelection(); //function declaration for selecting flight
+
+ void flightSeatNumber(int pnr);
+
+ void d();
+
+   void current();
 
 };
-
 #endif

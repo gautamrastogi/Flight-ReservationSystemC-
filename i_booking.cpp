@@ -148,3 +148,26 @@ int i_booking::flightSelectionInt() //function declaration and definition for se
     return flightSelectionInt();
   }
 }
+
+/* void i_booking:: flightSeatNumber(string pnri) {
+    cout<<"Enter PNR of flight";
+    cin>>fn2;
+    if(fn2 ==  pnri) {
+    cout<<"Enter the row number with colum letter ex(0 A): ";
+    cin>>row>>colum;
+    colum = toupper(colum);
+    cout<<"The Flight seat Number is: "<<row<<colum;
+    }
+  } */
+
+  void i_booking:: i() {
+    cout<<"International Flight Number: " << pnr << "International Flight Departure Time: " << tojdi<< "International Flight Arrival Time: " << tojai;
+}
+
+
+  void i_booking::current(){
+    cout<<"Boarded the International flight "<<pnri<<endl;
+  }
+
+
+ 
